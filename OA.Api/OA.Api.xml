@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OA.Api</name>
+    </assembly>
+    <members>
+        <member name="M:OA.Api.Controllers.AdvertisementController.GetAdvertisementsForMobile">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.AdvertisementController.GetAdvertisements">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.AdvertisementController.UploadAdvertisements(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.AdvertisementController.DeleteAdvertisement(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.AnswerController.GetAnswerAttachmentByRequestId(System.Guid)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.AnswerController.AddAnswerToRequest(OA.Service.Implementation.AnswerServices.Dtos.CreateAnswerDto,Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.AnswerController.DeleteAnswerFromRequest(System.Guid)">
+            <summary>
+            Mobile , Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.ExtraRequestController.GetStudentExtraRequest(OA.Service.Implementation.ExtraRequestServices.Dtos.GetStudentExtraRequestDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.ExtraRequestController.AddExtraRequestToStudent(OA.Service.Implementation.ExtraRequestServices.Dtos.CreateExtraRequestDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.ExtraRequestController.EditStudentExtraRequest(OA.Service.Implementation.ExtraRequestServices.Dtos.EditExtraRequestDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.GradeController.GetGrades(OA.Repo.Dtos.FilterDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.GradeController.GetGradeById(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.GradeController.GetGradesByStageIdAdmin(System.Guid)">
+            <summary>
+            Web   ⚡⚡⚡⚡
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.GradeController.GetGradesByStageId(System.Guid)">
+            <summary>
+            Mobile ⚡⚡⚡⚡
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.GradeController.AddGrade(OA.Service.Implementation.GradeServices.Dtos.CreateGradeDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.GradeController.EditGrade(OA.Service.Implementation.GradeServices.Dtos.EditGradeDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.GradeController.DeleteGrade(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.GradeController.GradeActivation(System.Guid)">
+            <summary>
+            Web  
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.GetUnitLessonsForAdmin(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.GetUnitLessonByIdForAdmin(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.GetSubjectUnitsLessons(System.Guid)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.GetLessonFilesForStudent(System.Guid)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.GetLessonVideosForStudent(System.Guid)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.AddLesson(OA.Service.Implementation.LessonServices.Dtos.CreateLessonDto,System.Collections.Generic.List{OA.Service.Implementation.LessonServices.Dtos.LessonPdfDto})">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.EditLesson(OA.Service.Implementation.LessonServices.Dtos.EditLessonDto,System.Collections.Generic.List{OA.Service.Implementation.LessonServices.Dtos.LessonPdfDto})">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.DeleteLessonAttachment(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.DeleteLesson(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.LessonController.LessonActivation(System.Guid)">
+            <summary>
+              Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.MessageController.SendNotification(System.String)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.MessageController.SaveDeviceToken(OA.Service.Implementation.MessageServices.Dtos.SaveTokenDto)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.MessageController.AdminReplay(OA.Service.Implementation.MessageServices.Dtos.AdminReplayDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.MessageController.GetRecentChats(OA.Service.Implementation.MessageServices.Dtos.RecentChatFilterDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.MessageController.GetStudentChatHistory(System.String)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.MessageController.UserSendMessage(OA.Service.Implementation.MessageServices.Dtos.CreateMessageDto)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.MessageController.GetUserMessages">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.NotificationController.PushNotification">
+            <summary>
+            For Test Only 
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.ReportController.GetRequestsReport(OA.Service.Implementation.ReportServices.Dtos.ReportFilterDto)">
+            <summary>
+            Web TODO: ==>  Add (Section Name) To report :)
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.ReportController.GetRequestReportDetails(System.Guid)">
+            <summary>
+            Web TODO: ==>  Add (Section Name) And (Section Id) To report :)
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.ReportController.GetTeacherRequestReport(OA.Service.Implementation.ReportServices.Dtos.TeacherReportFilterDto)">
+            <summary>
+            Web TODO: ==> (Section Id) To Filter report :)
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.ReportController.TeacherViewRequestReport(OA.Repo.Dtos.TeacherReportMobileFilterDto)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.RequestController.GetStudentRequests">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.RequestController.GetRequestAttachments(System.Guid)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.RequestController.GetTeacherRequests">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.RequestController.GetRequestById(System.Guid)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.RequestController.GetTeacherRequestById(System.Guid)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.RequestController.AddRequest(OA.Service.Implementation.RequestServices.Dtos.CreateRequestDto,Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.RequestController.RequestRedirect(OA.Service.Implementation.ReportServices.Dtos.RequestRedirectDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.RequestController.DeleteRequest(System.Guid)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.RequestController.DeleteFullRequest(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SectionController.GetAllSectionsAdmin">
+            <summary>
+            Web   ⚡⚡⚡⚡⚡⚡
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SectionController.GetSections">
+            <summary>
+            Mobile  ⚡⚡⚡⚡⚡
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SectionController.GetSectionById(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SectionController.AddSection(OA.Service.Implementation.SectionServices.Dtos.CreateSectionDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SectionController.EditStage(OA.Service.Implementation.SectionServices.Dtos.EditSectionDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SectionController.DeleteStage(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SectionController.SectionActivation(System.Guid)">
+            <summary>
+            Web  
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SemesterController.GetSemesters">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SemesterController.GetSemesterById(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SemesterController.AddSemester(OA.Service.Implementation.SemesterServices.Dtos.CreateSemesterDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SemesterController.EditSemester(OA.Service.Implementation.SemesterServices.Dtos.EditSemesterDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SemesterController.DeleteSemester(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SemesterController.SemesterActivation(System.Guid)">
+            <summary>
+              Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StageController.GetAllStagesAdmin">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StageController.GetStages">
+            <summary>
+            Mobile  ⚡⚡⚡⚡
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StageController.GetStageById(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StageController.AddStage(OA.Service.Implementation.StageServices.Dtos.CreateStageDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StageController.EditStage(OA.Service.Implementation.StageServices.Dtos.EditStageDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StageController.DeleteStage(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StageController.StageActivation(System.Guid)">
+            <summary>
+            Web  
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StudentController.GetStudents(OA.Repo.Dtos.FilterDto)">
+            <summary>
+            Web TODO: ==>  Add Section To Filter + Add Section Name To result :)  ==========================> StudentName Changed To Name
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StudentController.GetStudentById(System.Guid)">
+            <summary>
+            Web TODO: ==>  Add Section Name To result :)
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StudentController.StudentViewProfile">
+            <summary>
+            Mobile TODO: ==>  Add Section Name To result :)
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StudentController.Login(OA.Service.Implementation.UserServices.Dtos.StudentLoginDto)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StudentController.StudentRegistration(OA.Service.Implementation.StudentServices.Dtos.CreateStudentDto)">
+            <summary>
+            Mobile  TODO: ==>  Add Section 
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StudentController.StudentEditProfile(OA.Service.Implementation.StudentServices.Dtos.EditStudentDto)">
+            <summary>
+            Mobile 
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StudentController.AdminStudentEditProfile(OA.Service.Implementation.StudentServices.Dtos.AdminEditStudentDto)">
+            <summary>
+            Web TODO: ==>  TODO: ==>  Add Section :)
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StudentController.PremiumStudentActivation(System.Guid)">
+            <summary>
+            Web  
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.StudentController.StudentActivation(System.Guid)">
+            <summary>
+            Web  
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:OA.Api.Controllers.StudentController.DeleteStudent(System.Nullable{System.Guid})" -->
+        <member name="M:OA.Api.Controllers.SubjectController.GetSubjectsByGradeAndSection(OA.Repo.Dtos.FilterGradeAndSectionDto)">
+            <summary>
+            Web 
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SubjectController.GetSubjectById(System.Guid)">
+            <summary>
+            Web  TODO: ==>  Add (SectionName) And (SectionId) :)
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SubjectController.GetSubjects(OA.Repo.Dtos.FilterDto)">
+            <summary>
+            Web   TODO: ==>  Add SubjectFilter With (GradeId) And (SectionId) :) + Edit Response
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SubjectController.GetStudentSubjects">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SubjectController.GeStudentSubjectsForLessons">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SubjectController.AddSubject(OA.Service.Implementation.SubjectGradeServices.Dtos.CreateSubjectDto)">
+            <summary>
+            Web   TODO: ==>  Add (SectionId) :) Add Image
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SubjectController.EditSubject(OA.Service.Implementation.SubjectGradeServices.Dtos.EditSubjectDto)">
+            <summary>
+            Web    TODO: ==>  Add (SectionId) :) Add Image
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SubjectController.DeleteSubject(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.SubjectController.SubjectActivation(System.Guid)">
+            <summary>
+            Web  
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.Login(OA.Service.Implementation.UserServices.Dtos.LoginDto)">
+            <summary>
+            Mobile
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.GetTeachers(OA.Repo.Dtos.FilterDto)">
+            <summary>
+            Web  ==========================> TeacherName Changed To Name + Edit Response
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.GetTeacherById(System.Guid)">
+            <summary>
+            Web 
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.TeacherViewProfile">
+            <summary>
+            Mobile  
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.AddTeacher(OA.Service.Implementation.TeacherServices.Dtos.CreateTeacherDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.EditTeacherProfile(OA.Service.Implementation.TeacherServices.Dtos.EditTeacherDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.AddSubjectsToTeacher(OA.Service.Implementation.TeacherSubjectServices.Dtos.AddSubjectsToTeacherDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.RemoveSubjectFromTeacher(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.TeacherActivation(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.PremiumTeacherActivation(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.TeacherResetPassword(OA.Service.Implementation.UserServices.Dtos.ResetPasswordDto)">
+            <summary>
+            Web  
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.TeacherController.DeleteTeacher(System.Guid)">
+            <summary>
+            Web  
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.UnitController.GetSubjectUnitsAdmin(OA.Repo.Dtos.UnitFilterDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.UnitController.GetUnitById(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.UnitController.AddUnit(OA.Service.Implementation.UnitServices.Dtos.CreateUnitDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.UnitController.EditUnit(OA.Service.Implementation.UnitServices.Dtos.EditUnitDto)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.UnitController.DeleteUnit(System.Guid)">
+            <summary>
+            Web
+            </summary>
+        </member>
+        <member name="M:OA.Api.Controllers.UnitController.UnitActivation(System.Guid)">
+            <summary>
+              Web
+            </summary>
+        </member>
+    </members>
+</doc>

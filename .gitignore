@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/OA.Api/bin
+/OA.Api/.config
+/OA.Api/obj
+/OA.Api/Properties
+/OA.Api/wwwroot
+/OA.Data/bin
+/OA.Data/obj
+/OA.Repo/bin
+/OA.Repo/obj
+/OA.Service/bin
+/OA.Service/obj
+/.vs/Answers
+/.vs
